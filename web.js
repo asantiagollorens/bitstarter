@@ -7,6 +7,7 @@ var string = buffer.toString();
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
+    console.log(data + " --- " + buffer + " --- " + string);
   response.send(string);
 });
 
